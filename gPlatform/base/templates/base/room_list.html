@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Room List</title>
+  </head>
+  <body>
+    <h1>Room List for {{game.name}}</h1>
+    <ul>
+      {% for room in rooms %}
+      <li>{{ room.room_id }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Room Detail</title>
+  </head>
+  <body>
+    <h1>Room Detail for {{room.room_id}}</h1>
+    <ul>
+      <li>Room ID: {{ room.room_id }}</li>
+      <li>Game ID: {{ room.game.name }}</li>
+      <li>Max Players: {{ room.max_players }}</li>
+      <p>Current Players:</p>
+      <ul>
+        {% for player in players %}
+        <li>{{ player.username }}</li>
+        {% endfor %}
+      </ul>
+    </ul>
+  </body>
+</html>
